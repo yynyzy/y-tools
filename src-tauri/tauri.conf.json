@@ -53,6 +53,7 @@
     "updater": {
       "active": false
     },
+    "macOSPrivateApi": true,
     "windows": [
       {
         "fullscreen": false,
@@ -61,7 +62,8 @@
         "title": "y-tools",
         "width": 800,
         "minHeight": 600,
-        "minWidth": 800
+        "minWidth": 800,
+        "transparent": true
       }
     ]
   }

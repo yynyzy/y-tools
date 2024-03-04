@@ -7,14 +7,15 @@ export default function Sidebar() {
   const router = useRouter();
 
   const onSideBarClick = () => {
-    router.push('/ImgTransfer');
-  }
+    router.push('/ImageFormatConversion');
+  };
+
   return (
     <>
-    <ul className="bg-white text-black p-2 w-1/6 min-w-16 h-screen">
+    <ul className="p-2 w-1/5 h-screen border-2 border-cyan-400 overflow-y-scroll">
       {
         ToolsConfig.map((config) => (
-          <li className="bg-green-600" onClick={ onSideBarClick }>{ config.name }</li>
+          <li className="h-14 leading-[3.5rem] my-2 bg-cyan-400 rounded text-center text-lg" onClick={ onSideBarClick } key={ config.id }>{ config.name }</li>
         ))
       }
     </ul>
